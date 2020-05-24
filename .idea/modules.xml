@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hibernate.iml" filepath="$PROJECT_DIR$/hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate01/hibernate01.iml" filepath="$PROJECT_DIR$/hibernate01/hibernate01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate02/hibernate02.iml" filepath="$PROJECT_DIR$/hibernate02/hibernate02.iml" />
     </modules>
   </component>
 </project>
