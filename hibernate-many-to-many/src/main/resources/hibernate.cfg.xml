@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--jdbc配置的基本属性-->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate?serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <!--sql方言、根据数据库类型生成对应的sql-->
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!--在控制台展示sql-->
+        <property name="show_sql">true</property>
+
+        <mapping resource="orm/Teacher.hbm.xml"></mapping>
+        <mapping resource="orm/Student.hbm.xml"></mapping>
+
+    </session-factory>
+</hibernate-configuration>

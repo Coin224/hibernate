@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.hibernate</groupId>
-  <artifactId>hibernate02</artifactId>
+  <groupId>com.hibernate</groupId>
+  <artifactId>hibernate-one-to-many</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>hibernate02</name>
+  <name>hibernate-one-to-many</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -26,6 +26,7 @@
       <scope>test</scope>
     </dependency>
 
+
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
       <groupId>org.hibernate</groupId>
@@ -39,9 +40,6 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.20</version>
     </dependency>
-
-
-
   </dependencies>
 
   <build>

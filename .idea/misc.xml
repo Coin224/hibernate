@@ -5,6 +5,11 @@
       <list>
         <option value="$PROJECT_DIR$/hibernate01/pom.xml" />
         <option value="$PROJECT_DIR$/hibernate02/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate03/hibernate03-QBC-for-JPA/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate-QBC-for-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate-one-to-one/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate-one-to-many/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate-many-to-many/pom.xml" />
       </list>
     </option>
   </component>

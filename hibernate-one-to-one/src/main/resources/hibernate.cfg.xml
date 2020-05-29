@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate?serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <!--        &lt;!&ndash; JDBC connection pool (use the built-in) &ndash;&gt;-->
+        <!--        <property name="connection.pool_size">1</property>-->
+
+        <!-- SQL dialect sql方言 根据数据库的类型来生成SQL语句-->
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!--        &lt;!&ndash; Enable Hibernate's automatic session context management &ndash;&gt;-->
+        <!--        <property name="current_session_context_class">thread</property>-->
+
+        <!--        &lt;!&ndash; Disable the second-level cache  &ndash;&gt;-->
+        <!--        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>-->
+
+        <!-- Echo all executed SQL to stdout 在控制台显示hibernate生成的sql-->
+        <property name="show_sql">true</property>
+
+        <!--        &lt;!&ndash; Drop and re-create the database schema on startup &ndash;&gt;-->
+        <!--        <property name="hbm2ddl.auto">update</property>-->
+
+        <mapping resource="orm/Person.hbm.xml"/>
+        <mapping resource="orm/Card.hbm.xml"/>
+
+    </session-factory>
+
+</hibernate-configuration>

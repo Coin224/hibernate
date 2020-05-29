@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernate.domain">
+    <!-- 告诉hibernate 实体类 与 表的对应关系 -->
+    <class name="Person" table="t_person">
+        <id name="pid" column="pid"></id>
+        <property name="pname" column="pname"></property>
+        <property name="age" column="age"></property>
+        <one-to-one name="card" class="Card" cascade="all"></one-to-one>
+    </class>
+</hibernate-mapping>

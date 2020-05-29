@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernate.domain">
+    <!-- 告诉hibernate 实体类 与 表的对应关系 -->
+    <class name="Dept" table="t_dept">
+        <id name="dno" column="dno"></id>
+        <property name="dname" column="dname"></property>
+        <set name="emps" cascade="all" inverse="true">
+            <!--外键名字-->
+            <key column="dno"></key>
+            <one-to-many class="Emp"></one-to-many>
+        </set>
+    </class>
+
+</hibernate-mapping>
